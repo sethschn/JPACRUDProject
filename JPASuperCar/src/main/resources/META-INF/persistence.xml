@@ -13,9 +13,9 @@
 	<!-- end entities -->
 	
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/giraffedb?useSSL=false&amp;useLegacyDatetimeCode=false&amp;serverTimezone=MST" />
-      <property name="javax.persistence.jdbc.user" value="giraffeuser"/>
-      <property name="javax.persistence.jdbc.password" value="giraffe" />
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/cardb?useSSL=false&amp;useLegacyDatetimeCode=false&amp;serverTimezone=MST" />
+      <property name="javax.persistence.jdbc.user" value="caruser"/>
+      <property name="javax.persistence.jdbc.password" value="notacar" />
       <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
 
       <property name="hibernate.show_sql" value="false" />
