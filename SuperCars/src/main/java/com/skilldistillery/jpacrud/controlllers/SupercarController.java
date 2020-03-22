@@ -25,6 +25,11 @@ public class SupercarController {
 		model.addAttribute("supercar", dao.findAll());
 		return "index";
 	}
+	@RequestMapping(path="/admin")
+	public String admin(Model model) {
+		model.addAttribute("supercar", dao.findAll());
+		return "admin";
+	}
 	
 	@RequestMapping(path="getSupercar.do",method=RequestMethod.GET, params="supercarid")
 	public String showSupercar(@RequestParam Integer supercarid, Model model) {

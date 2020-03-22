@@ -6,21 +6,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Super Car List</title>
+<title>Super Car Admin</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
 	<div align="center">
-		<h2>Super Car Home</h2>
-			<div>
-			<a href="home.do">Home</a>
-			<a href="/admin">Admin</a>
-		</div>
+		<h2>Super Car Admin(admin.jsp)</h2>
 		<form method="get" action="getSupercar.do">
 		<label for="supercarid">Search by ID</label>
 			<input type="text" name="supercarid" value="1"/> <input
 				type="submit" value="Submit text" />
 		</form>
+		<h3>
+			<a href="/new">New Super Car</a>
+		</h3>
 		<table border="1" cellpadding="5">
 			<tr>
 				<th>ID</th>
@@ -38,6 +37,10 @@
 					<td>${car.topSpeed}</td>
 					<td>${car.modelYear}</td>
 					<td>${car.horsepower}</td>
+					<td>
+					<a href="/edit?id=${car.id}">Edit</a> 
+					<a href="/delete?id=${car.id}">Delete</a>
+					</td>
 				</tr>
 			</c:forEach>
 		</table>

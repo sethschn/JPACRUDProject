@@ -12,19 +12,45 @@
 <link rel="stylesheet" href="css/myStyles.css">
 </head>
 <body>
-	<div align="center">
+<div class="jumbotron text-center">
+  <h1>${supercar.name }</h1>
+  <p>Resize this responsive page to see the effect!</p>
+	<div>
+		<a href="home.do">Home</a>
+		<a href="/edit?id=${supercar.id}">Edit</a>
+	</div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+<!--       <h3>Column 1</h3>
+      <p>Lorem ipsum dolor..</p> -->
+    </div>
+    <div class="col-sm-4">
+		<p>Top speed: ${supercar.topSpeed }</p>
+		<p>Model year: ${supercar.modelYear }</p>
+		<p>Engine: ${supercar.engine}</p>
+		<p>Horsepower: ${supercar.horsepower }</p>
+    </div>
+    <div class="col-sm-4">
+<!--       <h3>Column 3</h3>
+      <p>Lorem ipsum dolor..</p> -->
+    </div>
+  </div>
+</div>
+</body>
+</html>
+<%-- 	<div align="center">
 		<div>
 			<a href="home.do">Home</a>
 			<a href="/edit?id=${supercar.id}">Edit</a>
 		</div>
 		<div class="container-flud" align="center">
-			<h3>Super Car(show.jsp)</h3>
-			<p>Name: ${supercar.name}</p>
+			<h3>Super Car ${supercar.name }</h3>
 			<p>Top speed: ${supercar.topSpeed }</p>
 			<p>Model year: ${supercar.modelYear }</p>
 			<p>Engine: ${supercar.engine}</p>
 			<p>Horsepower: ${supercar.horsepower }</p>
 		</div>
-	</div>
-</body>
-</html>
+	</div> --%>
