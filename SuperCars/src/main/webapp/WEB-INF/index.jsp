@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div align="center">
-		<h2>Super Car index.jsp</h2>
+		<h2>Super Car(index.jsp)</h2>
 		<form method="get" action="getSupercar.do">
 		<label for="supercarid">Search by ID</label>
 			<input type="text" name="supercarid" value="1"/> <input
@@ -36,8 +36,10 @@
 					<td>${car.topSpeed}</td>
 					<td>${car.modelYear}</td>
 					<td>${car.horsepower}</td>
-					<td><a href="/edit?id=${car.id}">Edit</a> <a
-						href="/delete?id=${car.id}">Delete</a></td>
+					<td>
+					<a href="/edit?id=${car.id}">Edit</a> 
+					<a href="/delete?id=${car.id}">Delete</a>
+					</td>
 				</tr>
 			</c:forEach>
 		</table>

@@ -12,16 +12,19 @@
 <link rel="stylesheet" href="css/myStyles.css">
 </head>
 <body>
-	<div>
-		<a href="home.do">Home</a>
-	</div>
-	<div class="container-flud">
-		<h3>Super car show.jsp</h3>
-		<h5>Name: ${supercar.name}</h5>
-		<p>Top speed: ${supercar.topSpeed }</p>
-		<p>Model year: ${supercar.modelYear }</p>
-		<p>Engine: ${supercar.engine}</p>
-		<p>Horsepower: ${supercar.horsepower }</p>
+	<div align="center">
+		<div>
+			<a href="home.do">Home</a>
+			<a href="/edit?id=${supercar.id}">Edit</a>
+		</div>
+		<div class="container-flud" align="center">
+			<h3>Super Car(show.jsp)</h3>
+			<p>Name: ${supercar.name}</p>
+			<p>Top speed: ${supercar.topSpeed }</p>
+			<p>Model year: ${supercar.modelYear }</p>
+			<p>Engine: ${supercar.engine}</p>
+			<p>Horsepower: ${supercar.horsepower }</p>
+		</div>
 	</div>
 </body>
 </html>

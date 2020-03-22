@@ -27,19 +27,18 @@ public class SupercarController {
 	}
 	
 	@RequestMapping(path="getSupercar.do",method=RequestMethod.GET, params="supercarid")
-	public String showFilm(@RequestParam Integer supercarid, Model model) {
+	public String showSupercar(@RequestParam Integer supercarid, Model model) {
 		
-		String viewName = "show";
 		Supercar supercarObj = dao.findById(supercarid);
 		model.addAttribute("supercar",supercarObj);
-		return viewName;
+		return "show";
 	}
 	
 	@RequestMapping("/new")
-	public String newSupercarForm(Map<String, Object> model) {
+	public String newSupercarForm(Model model) {
 	    Supercar supercar = new Supercar();
-	    model.put("supercar", supercar);
-	    return "newsupercar";
+	    model.addAttribute("supercar", supercar);
+	    return "new_supercar";
 	}
 	
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
@@ -64,7 +63,7 @@ public class SupercarController {
 	}
 	
 	@RequestMapping("/delete")
-	public String deleteCustomerForm(@RequestParam int id) {
+	public String deleteSupercarForm(@RequestParam int id) {
 	    dao.destroy(id);
 	    return "redirect:/";       
 	}

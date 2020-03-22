@@ -10,7 +10,7 @@
 </head>
 <body>
     <div align="center">
-        <h2>Edit Super Car</h2>
+        <h2>Edit Super Car(edit_supercar.jsp)</h2>
         <form:form action="update" method="post" modelAttribute="supercar">
             <table border="0" cellpadding="5">
                 <tr>
