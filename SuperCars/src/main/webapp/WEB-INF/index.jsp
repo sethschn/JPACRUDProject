@@ -36,9 +36,10 @@
 </head>
 <body>
 <div align="center">
-    <h2>Super Car Manager index.jsp</h2>
+    <h2>Super Car index.jsp</h2>
+    <p>Search by ID</p>
     <form method="get" action="getSupercar.do">
-        <input type="text" name="supercarid" /> &nbsp;
+        <input type="text" name="supercarid" value="Search By ID" />
         <input type="submit" value="Submit text" />
     </form>
     <h3><a href="/new">New Super Car</a></h3>
@@ -61,7 +62,6 @@
             <td>${car.horsepower}</td>
             <td>
                 <a href="/edit?id=${car.id}">Edit</a>
-                &nbsp;&nbsp;&nbsp;
                 <a href="/delete?id=${car.id}">Delete</a>
             </td>
         </tr>
