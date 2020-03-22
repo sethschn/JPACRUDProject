@@ -7,21 +7,26 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Super Car List</title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div align="center">
-		<h2>Super Car Home</h2>
-			<div>
-			<a href="home.do">Home</a>
-			<a href="/admin">Admin</a>
-		</div>
+<div class="jumbotron text-center">
+  <h1>Super Car Home</h1>
+	<div align="left">
+		<a href="home.do">Home</a>
+		<a href="/admin">Admin</a>
+	</div>
+</div>
+	<div class="container">
 		<form method="get" action="getSupercar.do">
 		<label for="supercarid">Search by ID</label>
 			<input type="text" name="supercarid" value="1"/> <input
-				type="submit" value="Submit text" />
+				type="submit" value="Search" />
 		</form>
-		<table border="1" cellpadding="5">
+		<table class="table table-hover">
 			<tr>
 				<th>ID</th>
 				<th>Name</th>
