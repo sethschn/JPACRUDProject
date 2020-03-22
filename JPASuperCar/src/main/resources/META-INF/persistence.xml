@@ -4,12 +4,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 
-  <persistence-unit name="GiraffePU">
+  <persistence-unit name="SupercarPU">
     <provider>org.hibernate.jpa.HibernatePersistenceProvider
     </provider>
     
     <!-- entities  -->
-    <class>com.skilldistillery.jpacrud.entities.Giraffe</class>
+    <class>com.skilldistillery.jpacrud.entities.Supercar</class>
 	<!-- end entities -->
 	
     <properties>

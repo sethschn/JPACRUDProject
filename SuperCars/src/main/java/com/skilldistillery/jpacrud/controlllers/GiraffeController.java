@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.skilldistillery.jpacrud.data.GiraffeDAO;
 
-@Controller
 public class GiraffeController {
 	
 	@Autowired

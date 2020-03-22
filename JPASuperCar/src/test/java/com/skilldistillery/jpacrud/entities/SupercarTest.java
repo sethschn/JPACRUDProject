@@ -20,7 +20,7 @@ class SupercarTest {
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
-		emf = Persistence.createEntityManagerFactory("GiraffePU");
+		emf = Persistence.createEntityManagerFactory("SupercarPU");
 	}
 
 	@AfterAll
