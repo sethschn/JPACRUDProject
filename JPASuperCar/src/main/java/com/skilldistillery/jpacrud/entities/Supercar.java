@@ -21,16 +21,26 @@ public class Supercar {
 	private String engine;
 	private Integer horsepower;
 	
+	private String image;
+	
 	public Supercar() {}
 	
-	public Supercar(int id, String name, Double topSpeed, Integer modelYear, String engine, Integer horsepower) {
+	public Supercar(String name, Double topSpeed, Integer modelYear, String engine, Integer horsepower, String image) {
 		super();
-		this.id = id;
 		this.name = name;
 		this.topSpeed = topSpeed;
 		this.modelYear = modelYear;
 		this.engine = engine;
 		this.horsepower = horsepower;
+		this.image = image;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
 	}
 
 	public int getId() {
@@ -69,14 +79,17 @@ public class Supercar {
 	public void setHorsepower(Integer horsepower) {
 		this.horsepower = horsepower;
 	}
+
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
 		builder.append("Supercar [id=").append(id).append(", name=").append(name).append(", topSpeed=").append(topSpeed)
 				.append(", modelYear=").append(modelYear).append(", engine=").append(engine).append(", horsepower=")
-				.append(horsepower).append("]");
+				.append(horsepower).append(", image=").append(image).append("]");
 		return builder.toString();
 	}
+
+	
 	
 	
 

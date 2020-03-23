@@ -14,21 +14,22 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div>
-		<a href="home.do">Home</a>
-		<a href="/admin">Admin</a>
+	<div class="jumbotron text-center">
+		<h1>New Super Car</h1>
+		<div align="left">
+			<a href="home.do">Home</a> <a href="/admin">Admin</a>
+		</div>
 	</div>
     <div align="center">
-        <h2>New Super Car</h2>
         <form:form action="save" method="post" modelAttribute="supercar">
-            <table border="0" cellpadding="5">
+            <table class="table table-hover">
                 <tr>
                     <td>Name: </td>
                     <td><form:input path="name" /></td>
                 </tr>
                 <tr>
                     <td>Engine: </td>
-                    <td><form:input path="engine" /></td>
+                    <td><form:input path="engine" size="70" /></td>
                 </tr>
                 <tr>
                     <td>Top Speed: </td>
