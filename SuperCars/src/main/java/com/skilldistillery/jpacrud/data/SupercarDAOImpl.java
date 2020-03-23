@@ -100,25 +100,6 @@ public class SupercarDAOImpl implements SupercarDAO {
 
 		return managed;
 	}
-	
-//	public void updateNullEmails() {
-//		EntityManagerFactory emf = Persistence.createEntityManagerFactory("VideoStore");
-//		EntityManager em = emf.createEntityManager();
-//		String sqlQuery = "select cust FROM Customer cust WHERE cust.email = '' OR cust.email is null";
-//		List<Customer> results = em.createQuery(sqlQuery, Customer.class).getResultList();
-//		
-//		em.getTransaction().begin();
-//		for (Customer cust : results) {
-//			cust.setEmail(cust.getFirstName()+"."+cust.getLastName()+"@sdcustomer.org");
-//			System.out.println(cust);
-//		}
-//		
-//		em.flush();
-//
-//		em.getTransaction().commit();
-//		
-//		em.close();
-//		emf.close();
-//	}
+	s
 
 }
