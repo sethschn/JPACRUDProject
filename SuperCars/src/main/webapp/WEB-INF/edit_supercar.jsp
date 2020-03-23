@@ -20,6 +20,7 @@
 		<h1>Editing ${supercar.name }</h1>
 		<div align="left">
 			<a href="home.do">Home</a> <a href="/admin">Admin</a>
+			<a href="getSupercar.do?supercarid=${supercar.id}">Back to car</a>
 		</div>
 	</div>
 
@@ -33,7 +34,7 @@
 				</tr>
 				<tr>
 					<td>Name:</td>
-					<td><form:input path="name" /></td>
+					<td><form:input path="name" size="50"/></td>
 				</tr>
 				<tr>
 					<td>Top speed:</td>
@@ -53,18 +54,16 @@
 					<td><form:input path="horsepower" /></td>
 				</tr>
 				<tr>
-					<td><button onclick="window.location.href='getSuperCar.do?supercarid=${supercar.id}'">Cancel</button>
-					<input type="submit" value="Save">
-					</td>
+					<td><input type="submit" value="Save"></td>
 				</tr>
 			</form:form>
 		</table>
 	</div>
 	<div>
-<table>
-	<tr>
-</table>
-</div>
-	
+		<table>
+			<tr>
+		</table>
+	</div>
+
 </body>
 </html>

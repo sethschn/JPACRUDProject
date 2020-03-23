@@ -40,9 +40,9 @@
 					<td>${car.id}</td>
 					<td><a href="getSupercar.do?supercarid=${car.id}">${car.name}</td>
 					<td>${car.engine}</td>
-					<td>${car.topSpeed}</td>
+					<td>${car.topSpeed} mph</td>
 					<td>${car.modelYear}</td>
-					<td>${car.horsepower}</td>
+					<td>${car.horsepower} hp</td>
 				</tr>
 			</c:forEach>
 		</table>

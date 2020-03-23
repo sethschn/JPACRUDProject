@@ -24,10 +24,10 @@
 		<table class="table">
 			<tr>
 				<td><img src="images/${supercar.image}"></td>
-				<td><h3 class="text-left">Top speed: ${supercar.topSpeed }</h3>
-					<h3 class="text-left">Model year: ${supercar.modelYear }</h3>
-					<h3 class="text-left">Engine: ${supercar.engine}</h3>
-					<h3 class="text-left">Horsepower: ${supercar.horsepower }</h3></td>
+				<td><h3 class="text-left">Top speed:<i> ${supercar.topSpeed } mph</i> </h3>
+					<h3 class="text-left">Model year:<i> ${supercar.modelYear }</i></h3>
+					<h3 class="text-left">Engine:<i> ${supercar.engine}</i></h3>
+					<h3 class="text-left">Horsepower:<i> ${supercar.horsepower} hp</i></h3></td>
 			</tr>
 		</table>
 	</div>
